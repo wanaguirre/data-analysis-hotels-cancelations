@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFEF5;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.section {
+    position: relative;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.question {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+.text-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-box.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.plot-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.plot-container.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide elements initially */
+.hidden {
+    opacity: 0;
+}
+
+/* Show elements when active */
+.active {
+    opacity: 1;
+}
+
+/* Section-specific styles */
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#changing-landscape .text-box,
+#financial-impact .text-box,
+#leveraging-data .text-box,
+#conclusions .text-box {
+    margin-top: 20vh;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Adjust plot sizes */
+#plot1, #plot2, #plot3, #plot4, #plot5, #plot6 {
+    width: 100%;
+    height: 80vh;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+    .question {
+        font-size: 1.5em;
+    }
+    .text-box {
+        padding: 15px;
+    }
+}
