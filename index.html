@@ -13,97 +13,83 @@
 </head>
 <body>
     <!-- Section 1: Introduction -->
-    <section id="intro" class="section">
+    <section id="intro" class="section-full">
         <h1 class="title">The Invisible Nightmare for Hotels</h1>
         <p class="subtitle">Always wondering if you will have a room upgrade for free, right?</p>
     </section>
+
+    <!-- GIF Section -->
     <section id="gif-section" class="section">
         <img src="assets/gif_hotel.gif" alt="Surprised Person" class="centered-image">
     </section>
+
+    <!-- Question Section -->
     <section id="question" class="section">
         <h2 class="question">But, why does it happen?????</h2>
     </section>
 
     <!-- Section 2: Changing Landscape -->
     <section id="changing-landscape" class="section">
-        <div class="text-box">
-            <p>The hotel booking landscape has undergone a dramatic shift, with most reservations now handled through third-party platforms like Booking.com. Online Travel Agencies (OTAs) have elevated cancellation policies to a central feature in their marketing strategies. Customers have grown accustomed to flexible cancellation terms, pushing cancellation rates to nearly 40% in 2018—a 6% yearly increase since 2014. While appealing for travelers, this trend complicates forecasting for hotels, reducing occupancy efficiency and impacting revenue.</p>
-        </div>
+        <p>The hotel booking landscape has undergone a dramatic shift, with most reservations now handled through third-party platforms like Booking.com. Online Travel Agencies (OTAs) have elevated cancellation policies to a central feature in their marketing strategies. Customers have grown accustomed to flexible cancellation terms, pushing cancellation rates to nearly 40% in 2018—a 6% yearly increase since 2014. While appealing for travelers, this trend complicates forecasting for hotels, reducing occupancy efficiency and impacting revenue.</p>
     </section>
 
     <!-- Visualization 1: Percentage of Bookings -->
     <section id="visualization-1" class="section step">
-        <div class="plot-container" id="plot1"></div>
+        <div class="plot-container" id="percentage_bookings_status"></div>
         <div class="text-box hidden" id="text1">
-            <p>As we delve deeper, consider this:</p>
-            <p>What if you were managing this hotel? You probably would focus on the food, rooms, aesthetics of the hotel, or a flashy website…, right? But have you ever thought about the silent business killer—cancellations?</p>
-            <p>Imagine being a hotel manager and realizing that nearly one out of every three bookings doesn’t materialize. Surprising, isn’t it? Our analysis reveals that 29% of all bookings are canceled before the guest arrives. This high cancellation rate poses a significant challenge for hotels, affecting occupancy rates, revenue forecasting, and operational efficiency.</p>
+            <!-- Text content -->
         </div>
     </section>
 
     <!-- Section 3: Financial Impact -->
     <section id="financial-impact" class="section">
-        <div class="text-box">
-            <h2>The Financial and Operational Strain of Cancellations</h2>
-            <p>To mitigate risks, some hotels utilize services like Booking.com’s “Risk Free Reservations”, which transfer financial responsibility to OTAs if a canceled booking cannot be replaced. Regardless of who bears the cost, cancellations impose a financial burden across the industry. Beyond revenue losses, cancellations disrupt operations, leading to staffing inefficiencies and potentially negative guest experiences.</p>
-            <p>In today’s review-driven economy, where TripAdvisor influenced $546 billion in travel spending in 2017, maintaining strong online reviews is critical. An increase in reputation scores can directly translate into higher occupancy and revenue. Accurate predictions of which bookings might be canceled are therefore invaluable for hotel operations.</p>
-        </div>
+        <h2>The Financial and Operational Strain of Cancellations</h2>
+        <p>To mitigate risks, some hotels utilize services like Booking.com’s “Risk Free Reservations”, which transfer financial responsibility to OTAs if a canceled booking cannot be replaced...</p>
     </section>
 
     <!-- Visualization 2: Correlation Heatmap -->
     <section id="visualization-2" class="section step">
-        <div class="plot-container" id="plot2"></div>
+        <div class="plot-container" id="correlation_cancellation_variables"></div>
         <div class="text-box hidden" id="text2">
-            <h2>Patterns Behind Cancellations</h2>
-            <p>Certain booking characteristics provide clues about cancellation likelihood. For instance, canceled bookings typically have stays that are 65% longer and a lead time of around 60 days. Understanding these patterns and the reasons behind cancellations is essential for minimizing their impact. Hotels that proactively analyze booking trends can tailor strategies to reduce the risk of cancellations.</p>
-            <ul>
-                <li><strong>Lead Time</strong> is the most highly correlated feature with whether or not a booking is canceled. It makes sense that as the number of days between when the booking is made and the supposed arrival date increases, customers have more time to cancel the reservation and there is more time for an unforeseen circumstance derailing travel plans to arise.</li>
-                <li>Interestingly, the <strong>Total Number of Special Requests</strong> is the second feature with the strongest correlation to our cancellation target. As the number of special requests made increases, the likelihood that a booking is canceled decreases. This suggests that engagement with the hotel prior to arrival and feeling like their needs are heard may make a customer less likely to cancel their reservation.</li>
-            </ul>
+            <!-- Text content -->
         </div>
     </section>
 
     <!-- Visualization 3: Lead Time vs. Cancellation Rate -->
     <section id="visualization-3" class="section step">
-        <div class="plot-container" id="plot3"></div>
+        <div class="plot-container" id="cancellation_by_lead_time"></div>
     </section>
 
     <!-- Visualization 4: Special Requests vs. Cancellation Rate -->
     <section id="visualization-4" class="section step">
-        <div class="plot-container" id="plot4"></div>
+        <div class="plot-container" id="cancellation_by_special_request"></div>
     </section>
 
     <!-- Visualization 5: Cancellation Rate by Country -->
     <section id="visualization-5" class="section step">
-        <div class="plot-container" id="plot5"></div>
+        <div class="plot-container" id="cancellation_by_country_map"></div>
         <div class="text-box hidden" id="text3">
-            <p>Additionally, the country of origin plays a role in cancellation patterns. Certain countries exhibit higher cancellation rates. Visualizing this data helps hotels to identify markets with higher risks and tailor their strategies accordingly.</p>
+            <!-- Text content -->
         </div>
     </section>
 
     <!-- Section 4: Leveraging Data -->
     <section id="leveraging-data" class="section">
-        <div class="text-box">
-            <h2>Leveraging Data to Improve Efficiency</h2>
-            <p>Data holds the key to addressing the challenges posed by cancellations. With the right tools, hotels can segment their customer base, identify high-risk bookings, and optimize their operations. Predictive models can offer actionable insights, helping hotels prioritize resources effectively and enhance revenue by minimizing the financial impact of cancellations.</p>
-            <p>Harnessing data analytics allows hotels to navigate the complexities of modern booking behaviors. By identifying patterns, reducing cancellations, and improving operations, hotels can foster guest satisfaction and achieve sustainable growth in an increasingly competitive market.</p>
-        </div>
+        <h2>Leveraging Data to Improve Efficiency</h2>
+        <p>Data holds the key to addressing the challenges posed by cancellations...</p>
     </section>
 
     <!-- Visualization 6: Clustering Model -->
     <section id="visualization-6" class="section step">
-        <div class="plot-container" id="plot6"></div>
+        <div class="plot-container" id="clustering"></div>
         <div class="text-box hidden" id="text4">
-            <p>As a result, we developed a model to segment customer types and identify which groups are more likely to cancel their bookings. This clustering allows hotels to predict cancellations more accurately and tailor their strategies accordingly.</p>
+            <!-- Text content -->
         </div>
     </section>
 
     <!-- Final Section: Conclusions -->
     <section id="conclusions" class="section">
-        <div class="text-box conclusion-text">
-            <p>Understanding and utilizing data effectively is no longer a luxury but a necessity in today’s hotel industry. By interpreting booking patterns and customer behaviors, hotels can reduce cancellations, optimize operations, and enhance guest experiences.</p>
-            <p>Data-driven strategies empower hotels to navigate the complexities of modern travel, ensuring resilience and success in an ever-competitive market.</p>
-        </div>
+        <p class="conclusion-text">Understanding and utilizing data effectively is no longer a luxury but a necessity in today’s hotel industry...</p>
     </section>
 
     <!-- Link to the JavaScript file -->

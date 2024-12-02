@@ -9,28 +9,18 @@ function handleStepEnter(response) {
     element.classList.add('active');
 
     // Remove 'hidden' class to reveal the element
-    if (element.querySelector('.hidden')) {
-        element.querySelector('.hidden').classList.remove('hidden');
+    const hiddenText = element.querySelector('.hidden');
+    if (hiddenText) {
+        hiddenText.classList.remove('hidden');
     }
 
     // Load visualizations when entering their sections
-    if (element.id === 'visualization-1') {
-        loadPlot('plot1', 'assets/percentage_bookings_status.html');
-    }
-    if (element.id === 'visualization-2') {
-        loadPlot('plot2', 'assets/correlation_cancellation_variables.html');
-    }
-    if (element.id === 'visualization-3') {
-        loadPlot('plot3', 'assets/cancellation_by_lead_time.html');
-    }
-    if (element.id === 'visualization-4') {
-        loadPlot('plot4', 'assets/cancellation_by_special_request.html');
-    }
-    if (element.id === 'visualization-5') {
-        loadPlot('plot5', 'assets/cancellation_by_country_map.html');
-    }
-    if (element.id === 'visualization-6') {
-        loadPlot('plot6', 'assets/clustering.html');
+    const plotContainer = element.querySelector('.plot-container');
+    if (plotContainer && !plotContainer.dataset.loaded) {
+        const plotId = plotContainer.id;
+        const filePath = `assets/${plotId}.html`;
+        loadPlot(plotId, filePath);
+        plotContainer.dataset.loaded = true;
     }
 }
 
