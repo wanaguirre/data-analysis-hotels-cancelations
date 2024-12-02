@@ -3,6 +3,7 @@ const scroller = scrollama();
 
 // Handle scrolling events
 function handleStepEnter(response) {
+    console.log(`Entering step: ${response.element.id}`);
     const element = response.element;
 
     // Add 'active' class to the element in view
@@ -26,6 +27,7 @@ function handleStepEnter(response) {
 
 // Load Plotly visualizations
 function loadPlot(containerId, filePath) {
+    console.log(`Attempting to load plot for container: ${containerId}, from file: ${filePath}`);
     const container = document.getElementById(containerId);
 
     // Check if the plot is already loaded
