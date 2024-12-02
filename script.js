@@ -1,5 +1,3 @@
-// script.js
-
 // Initialize Scrollama
 const scroller = scrollama();
 
@@ -11,8 +9,8 @@ function handleStepEnter(response) {
     element.classList.add('active');
 
     // Remove 'hidden' class to reveal the element
-    if (element.classList.contains('hidden')) {
-        element.classList.remove('hidden');
+    if (element.querySelector('.hidden')) {
+        element.querySelector('.hidden').classList.remove('hidden');
     }
 
     // Load visualizations when entering their sections
@@ -47,6 +45,9 @@ function loadPlot(containerId, filePath) {
             .then(data => {
                 container.innerHTML = data;
                 container.dataset.loaded = true;
+            })
+            .catch(error => {
+                console.error('Error loading plot:', error);
             });
     }
 }
@@ -54,8 +55,8 @@ function loadPlot(containerId, filePath) {
 // Setup the scroller
 scroller
     .setup({
-        step: '.section',
-        offset: 0.5,
+        step: '.step',
+        offset: 0.7, // Adjusted offset for better timing
         debug: false,
     })
     .onStepEnter(handleStepEnter);

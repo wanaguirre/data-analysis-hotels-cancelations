@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Global Styles */
 body {
     margin: 0;
@@ -20,13 +18,13 @@ body {
 .title {
     font-size: 3em;
     text-align: center;
-    margin-top: 40vh;
+    margin-top: 10vh; /* Reduced from 40vh to 10vh */
 }
 
 .subtitle {
     font-size: 1.5em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px; /* Reduced spacing */
 }
 
 .centered-image {
@@ -40,7 +38,7 @@ body {
 .question {
     font-size: 2.5em;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px; /* Reduced spacing */
     font-family: 'Georgia', serif;
     font-style: italic;
 }
@@ -90,7 +88,7 @@ body {
 #financial-impact .text-box,
 #leveraging-data .text-box,
 #conclusions .text-box {
-    margin-top: 20vh;
+    margin-top: 10vh; /* Reduced from 20vh to 10vh */
 }
 
 ul {
@@ -102,6 +100,13 @@ ul {
 #plot1, #plot2, #plot3, #plot4, #plot5, #plot6 {
     width: 100%;
     height: 80vh;
+}
+
+/* Conclusion Text Styling */
+.conclusion-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Responsive Design */

@@ -9,7 +9,7 @@
     <!-- Import Plotly.js for visualizations -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Import Scrollama.js for scroll-based interactions -->
-    <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://unpkg.com/scrollama@2.2.1/dist/scrollama.min.js"></script>
 </head>
 <body>
     <!-- Section 1: Introduction -->
@@ -17,10 +17,10 @@
         <h1 class="title">The Invisible Nightmare for Hotels</h1>
         <p class="subtitle">Always wondering if you will have a room upgrade for free, right?</p>
     </section>
-    <section id="some-section" class="section">
+    <section id="gif-section" class="section">
         <img src="assets/gif_hotel.gif" alt="Surprised Person" class="centered-image">
     </section>
-    <section id="intro" class="section">
+    <section id="question" class="section">
         <h2 class="question">But, why does it happen?????</h2>
     </section>
 
@@ -32,7 +32,7 @@
     </section>
 
     <!-- Visualization 1: Percentage of Bookings -->
-    <section id="visualization-1" class="section">
+    <section id="visualization-1" class="section step">
         <div class="plot-container" id="plot1"></div>
         <div class="text-box hidden" id="text1">
             <p>As we delve deeper, consider this:</p>
@@ -51,7 +51,7 @@
     </section>
 
     <!-- Visualization 2: Correlation Heatmap -->
-    <section id="visualization-2" class="section">
+    <section id="visualization-2" class="section step">
         <div class="plot-container" id="plot2"></div>
         <div class="text-box hidden" id="text2">
             <h2>Patterns Behind Cancellations</h2>
@@ -64,17 +64,17 @@
     </section>
 
     <!-- Visualization 3: Lead Time vs. Cancellation Rate -->
-    <section id="visualization-3" class="section">
+    <section id="visualization-3" class="section step">
         <div class="plot-container" id="plot3"></div>
     </section>
 
     <!-- Visualization 4: Special Requests vs. Cancellation Rate -->
-    <section id="visualization-4" class="section">
+    <section id="visualization-4" class="section step">
         <div class="plot-container" id="plot4"></div>
     </section>
 
     <!-- Visualization 5: Cancellation Rate by Country -->
-    <section id="visualization-5" class="section">
+    <section id="visualization-5" class="section step">
         <div class="plot-container" id="plot5"></div>
         <div class="text-box hidden" id="text3">
             <p>Additionally, the country of origin plays a role in cancellation patterns. Certain countries exhibit higher cancellation rates. Visualizing this data helps hotels to identify markets with higher risks and tailor their strategies accordingly.</p>
@@ -91,7 +91,7 @@
     </section>
 
     <!-- Visualization 6: Clustering Model -->
-    <section id="visualization-6" class="section">
+    <section id="visualization-6" class="section step">
         <div class="plot-container" id="plot6"></div>
         <div class="text-box hidden" id="text4">
             <p>As a result, we developed a model to segment customer types and identify which groups are more likely to cancel their bookings. This clustering allows hotels to predict cancellations more accurately and tailor their strategies accordingly.</p>
@@ -100,7 +100,7 @@
 
     <!-- Final Section: Conclusions -->
     <section id="conclusions" class="section">
-        <div class="text-box">
+        <div class="text-box conclusion-text">
             <p>Understanding and utilizing data effectively is no longer a luxury but a necessity in today’s hotel industry. By interpreting booking patterns and customer behaviors, hotels can reduce cancellations, optimize operations, and enhance guest experiences.</p>
             <p>Data-driven strategies empower hotels to navigate the complexities of modern travel, ensuring resilience and success in an ever-competitive market.</p>
         </div>
