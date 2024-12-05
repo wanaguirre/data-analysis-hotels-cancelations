@@ -57,7 +57,15 @@ body {
 }
 
 /* Plot and Text Containers */
-.graphic-container {
+.graphic-container-1 {
+    position: sticky;
+    top: 25%;
+    width: 100%;
+    height: 80vh;
+    /*z-index: 10; /* Added z-index */
+}
+
+.graphic-container-2 {
     position: sticky;
     top: 10%;
     width: 100%;
@@ -105,9 +113,14 @@ body {
     padding: 50vh 0;
 }
 
+.intro-text {
+    margin-bottom: 180px; /* Additional bottom margin */
+}
+
 .conclusion-text {
     font-size: 1.5em;
-    margin: 80px auto 20px auto; /* Added top margin */
+    margin: -30px auto; /* Top and bottom margins */
+    margin-bottom: 80px; /* Additional bottom margin */
     text-align: center;
 }
 

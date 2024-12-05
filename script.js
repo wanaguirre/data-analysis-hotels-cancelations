@@ -96,7 +96,7 @@ function updateClusteringVisualization(stepIndex) {
 scroller
     .setup({
         step: '.step',
-        offset: 0.7,
+        offset: 0.8,
         debug: false,
     })
     .onStepEnter(handleStepEnter)

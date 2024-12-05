@@ -29,25 +29,25 @@
 
     <!-- Section 2: Changing Landscape -->
     <section id="changing-landscape" class="section">
-        <p>
+        <p class="intro-text">
             The hotel booking landscape has undergone a dramatic shift, with most reservations now handled through third-party platforms like <a href="https://www.hotelmanagement.net/tech/study-cancelation-rate-at-40-as-otas-push-free-change-policy">Booking.com</a>. Online Travel Agencies (OTAs) have elevated cancellation policies to a central feature in their marketing strategies (<a href="https://triptease.com/blog/the-real-cost-of-free-cancellations/">source</a>). Customers have grown accustomed to flexible cancellation terms, pushing cancellation rates to nearly 40% in 2018—a 6% yearly increase since 2014 (<a href="https://www.d-edge.com/how-online-hotel-distribution-is-changing-in-europe/">source</a>). While appealing for travelers, this trend complicates forecasting for hotels, reducing occupancy efficiency and impacting revenue (<a href="https://www.d-edge.com/how-online-hotel-distribution-is-changing-in-europe/">source</a>).
         </p>
     </section>
 
     <!-- Visualization 1: Percentage of Bookings -->
     <section id="visualization-1" class="section">
-        <div class="graphic-container">
+        <div class="graphic-container-1">
             <div class="plot-container" id="percentage_bookings_status"></div>
         </div>
         <div class="text-container">
             <div class="step">
                 <div class="text-box">
-                    <p>What if you were managing this hotel? You probably would focus on the food, room, aesthetic of the hotel, or a flashy website…, right? But have you ever thought about the silent business killer—cancellations?</p>
+                    <p>What if you were managing this hotel? You would probably focus on the food, the rooms, the hotel’s aesthetics, or perhaps a flashy website, right? But have you ever considered the silent business killer - cancellations?</p>
                 </div>
             </div>
             <div class="step">
                 <div class="text-box">
-                    <p>Imagine you are the manager of a hotel and that one out of every three bookings you receive never materializes. Surprising, right? In our analysis, we discovered that 29% of all bookings are canceled before the guest's arrival. This high cancellation rate represents a significant challenge for hotels, affecting occupancy rates, revenue forecasting, and operational efficiency.</p>
+                    <p>Imagine you are the manager of a hotel, and one out of every three bookings you receive never materializes. Surprising, is it not? Our analysis revealed that approximately 29% of all bookings are canceled before the guest’s arrival. This high cancellation rate poses a significant challenge for hotels, impacting occupancy rates, revenue forecasting, and operational efficiency.</p>
                 </div>
             </div>
         </div>
@@ -65,36 +65,36 @@
 
     <!-- Visualization 2: Correlation Heatmap and Related Plots -->
     <section id="visualization-2" class="section">
-        <div class="graphic-container">
+        <div class="graphic-container-2">
             <div class="plot-container" id="correlation_cancellation_variables"></div>
         </div>
         <div class="text-container">
             <!-- Step 0: Correlation Graph with initial text -->
             <div class="step">
                 <div class="text-box">
-                    <p><strong>Correlation Analysis</strong><br>
-                    The metrics with the highest positive and negative correlations to cancellations are lead time, whether the customer is local (Portuguese) or not, average daily rate, total number of special requests, and car parking spaces. The last two have an indirect correlation.</p>
+                    <p>
+                        The metrics with the strongest positive and negative correlations to cancellations include lead time, whether the customer is local (Portuguese) or not, the average daily rate, the total number of special requests, and car parking spaces. Notably, the last two exhibit an inverse correlation with cancellations.</p>
                 </div>
             </div>
             <!-- Step 1: Lead Time Plot -->
             <div class="step">
                 <div class="text-box">
-                    <p><strong>Lead Time</strong><br>
-                    "Lead time" is the most highly correlated feature with cancellations. As the number of days between booking and arrival increases, customers have more time to cancel, and unforeseen circumstances are more likely to arise.</p>
+                    <p>
+                        “Lead time” is the feature most strongly correlated with cancellations. As the number of days between booking and arrival increases, customers have more opportunities to cancel, and the likelihood of unforeseen circumstances also rises.</p>
                 </div>
             </div>
             <!-- Step 2: Special Requests Plot -->
             <div class="step">
                 <div class="text-box">
-                    <p><strong>Total Number of Special Requests</strong><br>
-                    As the number of special requests increases, the likelihood of cancellation decreases. Engagement with the hotel prior to arrival may make customers less likely to cancel.</p>
+                    <p>
+                        Special requests are inversely correlated with cancellations; as their number increases, the likelihood of cancellation decreases. This indicates that engagement with the hotel prior to arrival may enhance customer commitment.</p>
                 </div>
             </div>
             <!-- Step 3: Country of Origin Plot -->
             <div class="step">
                 <div class="text-box">
-                    <p><strong>Country of Origin</strong><br>
-                    Cancellation rates vary by country. Understanding which regions have higher cancellation tendencies can help hotels tailor their policies and marketing strategies.</p>
+                    <p>
+                        Tourist origin plays a significant role in cancellation rates. Understanding which regions exhibit higher tendencies for cancellations can help hotels tailor their policies and refine their marketing strategies to better manage these risks.</p>
                 </div>
             </div>
         </div>
@@ -112,18 +112,13 @@
 
     <!-- Visualization 3: Clustering Model -->
     <section id="visualization-3" class="section">
-        <div class="graphic-container">
+        <div class="graphic-container-2">
             <div class="plot-container" id="clustering"></div>
         </div>
         <div class="text-container">
             <div class="step">
                 <div class="text-box">
-                    <p>As a result, we developed a model that segments customer types and identifies which groups are more likely to cancel. By analyzing booking patterns without the target variable, we can classify customers into clusters.</p>
-                </div>
-            </div>
-            <div class="step">
-                <div class="text-box">
-                    <p>This segmentation allows hotels to predict cancellations with greater accuracy. By understanding the characteristics of each cluster, hotels can tailor their strategies to minimize cancellations and improve overall efficiency.</p>
+                    <p>As a result, we developed a model that segments customer types and identifies groups with a higher likelihood of canceling. By analyzing booking patterns without relying on the target variable, the model classifies customers into distinct clusters. This segmentation enables hotels to predict cancellations with greater accuracy, and by understanding the characteristics of each cluster, they can tailor strategies to minimize cancellations and improve overall efficiency.</p>
                 </div>
             </div>
         </div>
